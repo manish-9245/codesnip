@@ -20,7 +20,7 @@ export default function Footer() {
       </div> */}
       <div className="footer-section">
         <a
-          href="https://github.com/pranjalshikhar/CodeSnip/issues"
+          href="https://github.com/manish-9245"
           target="_blank"
           rel="noreferrer"
         >

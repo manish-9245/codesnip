@@ -13,11 +13,11 @@ const Footer = () => {
         />
         <p>CodeSnip</p>
       </div>
-      {/* <div className="footer-section">
+      <div className="footer-section">
         <a href="/#" target="_blank" rel="noreferrer">
-          Pranjal
+          Manish
         </a>
-      </div> */}
+      </div>
       <div className="footer-section">
         <a
           href="https://github.com/manish-9245"

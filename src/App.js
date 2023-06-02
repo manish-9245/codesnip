@@ -7,7 +7,7 @@ import { createGIF } from 'gifshot'
 import COLORS from './components/Background/Window/colors'
 import downloadBlob from './lib/downloadBlob'
 import './App.css'
-
+import Footer from './components/Footer'
 const SCALE = 1.9
 
 function App() {
@@ -185,6 +185,7 @@ function App() {
 					setEditorState={setEditorState}
 				/>
 			</div>
+			<Footer />
 			
 		</>
 	)

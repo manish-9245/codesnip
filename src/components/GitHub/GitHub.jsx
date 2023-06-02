@@ -5,7 +5,7 @@ const GitHub = () => {
   return (
     <a
       className="github"
-      href="https://github.com/pranjalshikhar/CodeSnip"
+      href="https://github.com/manish-9245"
       target="_blank"
       rel="noreferrer"
     >

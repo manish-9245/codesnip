@@ -10,7 +10,7 @@ const TABSIZE = 2;
 export default function Window({ colors, language, padding,
                                  editorState, setEditorState, filename, setFilename }) {
 
-  // Rename file extention if the language is not plaintext
+  // To rename file extention if the language is not plaintext
   useEffect(() => {
     setFilename(prev => {
       const extensionStripped = prev.substr(0, prev.lastIndexOf('.'));
@@ -22,9 +22,7 @@ export default function Window({ colors, language, padding,
     });
   }, [language, setFilename]);
 
-  // For basic code formatting
-  // This algorithm is not perfect but will be enough for those who were complaining
-  // Even though most of the time they are gonna copy past
+  //To ensure basic code formatting
   function onEditorChange(code) {
     setEditorState(prev => {
       if (code.length > prev.length) {
@@ -86,7 +84,6 @@ export default function Window({ colors, language, padding,
         </div>
         <p className="title-text">
           <img src={`/lang_icons/${LANGUAGE[language]}.svg`} alt="" className="language-icon" />
-          {/* contentEditable makes the span editable in the browser. it is not managed by React */}
           <span contentEditable onBlur={onFilenameChange}>{ filename }</span>
         </p>
       </div>
